@@ -5,7 +5,6 @@ db.getCollection("produtos").updateMany(
   },
 );
 
-use("commerce");
 db.getCollection("produtos").find(
   {},
   {
