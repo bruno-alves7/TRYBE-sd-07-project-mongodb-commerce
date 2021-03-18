@@ -6,10 +6,9 @@ db.getCollection("produtos").updateOne(
 );
 
 db.getCollection("produtos").find(
-  { nome: "Big Mac" },
+  { ultimaModificacao: { $exists: true } },
   {
     nome: 1,
-    ultimaModificacao: 1,
     _id: 0,
   },
 );
