@@ -8,14 +8,14 @@ db.getCollection("produtos").updateMany(
 db.getCollection("produtos").updateMany(
   { nome: "Big Mac" },
   {
-    $set: { "vendasPorDia.3": "60" },
+    $set: { "vendasPorDia.3": 60 },
   },
 );
 
 db.getCollection("produtos").updateMany(
   { tags: { $in: ["bovino", "pão"] } },
   {
-    $set: { "vendasPorDia.6": "120" },
+    $set: { "vendasPorDia.6": 120 },
   },
 );
 
